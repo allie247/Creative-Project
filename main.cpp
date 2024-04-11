@@ -8,6 +8,7 @@ void get_answer_from_user(string question, string answerA, string answerB, strin
 
 int main() {
     is_user_ready();
+    cout << "\nQuestion 1:\n" << endl;
     get_answer_from_user("A girl you are interested in rejects you. What should you do?",
                          "Take detours in order to follow her and mimic her actions.",
                          "Respect that she is not interested in you and leave her alone.",
@@ -16,6 +17,7 @@ int main() {
                          "Incorrect. She wants what she doesn’t ask for, and so you must continue to \npersist, regardless of her attempts to reject you.",
                          "Incorrect. You just need to make sure she keeps reading your sweet nothings, and \neventually she will write back. Don’t force it.",
                          "a" ); //question 1
+    cout << "\nQuestion 2:\n" << endl;
     get_answer_from_user("You see a woman that you find attractive at a sporting event. What should you do",
                          "Sit down next to her and brush away the absence of specks on her bosom.",
                          "Allow the man behind her to press his knee into her soft back.",
@@ -24,6 +26,7 @@ int main() {
                          "Incorrect. In allowing this behavior, you would be allowing another man to \nassert dominance over you, considering the girl is your territory.",
                          "Incorrect. Instead, you must applaud for the horse that she is rooting \nfor, regardless of whether or not you care about the race.",
                          "a"); //question 2
+    cout << "\nQuestion 3:\n" << endl;
     get_answer_from_user("You attend a dinner party and notice a pretty girl. What should you do?",
                          "Drink a lot of wine to give yourself courage.",
                          "Wait until you are able to consult the daylight to see if she is actually pretty.",
@@ -32,6 +35,7 @@ int main() {
                          "Correct! Wait until you are able to judge her accurately. You do not want a \nwoman who deceives you, but a woman who is submissive to you.",
                          "Incorrect. The lamplight is treacherous, wreaking havoc on judgements of \nbeauty. She will deceive you if you do this.",
                          "b"); //question 3
+    cout << "\nQuestion 4:\n" << endl;
     get_answer_from_user("You want to prove your manliness to the woman that interests you. What should you \ndo?",
                          "Swing weights that are heavy, but not too heavy, in front of her.",
                          "Wolf down sixteen meatballs in front of her.",
@@ -40,6 +44,7 @@ int main() {
                          "Incorrect. You must show her that you are able to control your body through \nthe regulation of your consumption.",
                          "Incorrect. Performing oral sex on a woman is the equivalent of being eaten by \nher vagina. If you engage in this act, you will be allowing yourself to be dominated by a woman and her genitals.",
                          "a"); //question 4
+    cout << "\nQuestion 5:\n" << endl;
     get_answer_from_user("Your wife doesn’t want to have sex with you. What should you do?",
                          "Have her eat the seed of a willow tree.",
                          "Respect her decision to not want to have sex.",
@@ -48,6 +53,7 @@ int main() {
                          "Incorrect. You should never allow a woman to assert dominance over you and your \ndesires.",
                          "Correct! This remedy can be used to influence your wife’s sexual desires \nwithout her knowledge, and make her more eager to have sex.",
                          "c"); //question 5
+    cout << "\nQuestion 6:\n" << endl;
     get_answer_from_user("Your wife does not want to have children. What should you do?",
                          "Respect her decision to not want to have children.",
                          "Take hairs from the tail of a female mule while she is having intercourse and \nweave them together during sex.",
@@ -56,6 +62,7 @@ int main() {
                          "Correct! This remedy will force your wife to conceive regardless of whether or \nnot she is willing.",
                          "Incorrect. NEVER DO THIS. IT WILL KILL YOU.",
                          "b"); //question 6
+    cout << "\nQuestion 7:\n" << endl;
     get_answer_from_user("After a night of drinking, you stumble upon your mistress, who is asleep. What \nshould you do?",
                          "Leave her to sleep in peace and continue on with your night.",
                          "Play with her loose hair and slide apples into her hands.",
@@ -64,6 +71,7 @@ int main() {
                          "Correct! Her body is under your control. Use it as if it is a piece of art to be \narranged.",
                          "Incorrect. In waking her up, she will no longer be an object, and you will be \nunable to impose your desires onto her. You want her to be asleep for as long as possible.",
                          "b"); //question 7
+    cout << "\nQuestion 8:\n" << endl;
     get_answer_from_user("You are infatuated with a woman you just met, but you have a family. What should \nyou do?",
                          "Follow her to a foreign place and abandon your wife and children for a more \nluxurious lifestyle.",
                          "Dress up in a slave-woman’s outfit in public in order to entertain her.",
