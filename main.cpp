@@ -8,14 +8,78 @@ void get_answer_from_user(string question, string answerA, string answerB, strin
 
 int main() {
     is_user_ready();
-    get_answer_from_user("prompt", "answer a", "answer b", "answer c", "explanation a", "explanation b", "explanation c", "a" );
+    get_answer_from_user("A girl you are interested in rejects you. What should you do?",
+                         "Take detours in order to follow her and mimic her actions.",
+                         "Respect that she is not interested in you and leave her alone.",
+                         "Keep writing letters to her even though she is not responding to your previous letters.",
+                         "Correct! Don’t feel ashamed to fritter away your time at her whim, to show her that she should not be allowed to exist without you.",
+                         "Incorrect. She wants what she doesn’t ask for, and so you must continue to persist, regardless of her attempts to reject you.",
+                         "Incorrect. You just need to make sure she keeps reading your sweet nothings, and eventually she will write back. Don’t force it.",
+                         "a" ); //question 1
+    get_answer_from_user("You see a woman that you find attractive at a sporting event. What should you do",
+                         "Sit down next to her and brush away the absence of specks on her bosom.",
+                         "Allow the man behind her to press his knee into her soft back.",
+                         "Applaud for a different horse than she is cheering for.",
+                         "Correct! The conditions are such that you have to touch her, regardless of whether or not there is reason to. Nobody is stopping you, so find any way to do so.",
+                         "Incorrect. In allowing this behavior, you would be allowing another man to assert dominance over you, considering the girl is your territory.",
+                         "Incorrect. Instead, you must applaud for the horse that she is rooting for, regardless of whether or not you care about the race.",
+                         "a"); //question 2
+    get_answer_from_user("You attend a dinner party and notice a pretty girl. What should you do?",
+                         "Drink a lot of wine to give yourself courage.",
+                         "Wait until you are able to consult the daylight to see if she is actually pretty.",
+                         "Approach her in the lamplight and express your interest in her.",
+                         "Incorrect. It is important to have a fixed measure when drinking alcohol in order for your mind and body to continue functioning and to make sure a quarrel is not spurred on.",
+                         "Correct! Wait until you are able to judge her accurately. You do not want a woman who deceives you, but a woman who is submissive to you.",
+                         "Incorrect. The lamplight is treacherous, wreaking havoc on judgements of beauty. She will deceive you if you do this.",
+                         "b"); //question 3
+    get_answer_from_user("You want to prove your manliness to the woman that interests you. What should you do?",
+                         "Swing weights that are heavy, but not too heavy, in front of her.",
+                         "Wolf down sixteen meatballs in front of her.",
+                         "Perform oral sex on her.",
+                         "Correct! This will show her that you are able to assert control over your actions and regulate your own levels of masculinity.",
+                         "Incorrect. You must show her that you are able to control your body through the regulation of your consumption.",
+                         "Incorrect. Performing oral sex on a woman is the equivalent of being eaten by her vagina. If you engage in this act, you will be allowing yourself to be dominated by a woman and her genitals.",
+                         "a"); //question 4
+    get_answer_from_user("Your wife doesn’t want to have sex with you. What should you do?",
+                         "Have her eat the seed of a willow tree.",
+                         "Respect her decision to not want to have sex.",
+                         "Place a southernwood sprig under the pillow.",
+                         "Incorrect. This remedy is for individuals seeking an abortion, considering it was known as the medicine of barrenness. You never want your wife to have an abortion!",
+                         "Incorrect. You should never allow a woman to assert dominance over you and your desires.",
+                         "Correct! This remedy can be used to influence your wife’s sexual desires without her knowledge, and make her more eager to have sex.",
+                         "c"); //question 5
+    get_answer_from_user("Your wife does not want to have children. What should you do?",
+                         "Respect her decision to not want to have children.",
+                         "Take hairs from the tail of a female mule while she is having intercourse and weave them together during sex.",
+                         "Have sex with her while she is menstruating.",
+                         "Incorrect. You must preserve your bloodline through the production of legitimate heirs in order to show your loyalty to the state of Rome.",
+                         "Correct! This remedy will force your wife to conceive regardless of whether or not she is willing.",
+                         "Incorrect. NEVER DO THIS. IT WILL KILL YOU.",
+                         "b"); //question 6
+    get_answer_from_user("After a night of drinking, you stumble upon your mistress, who is asleep. What should you do?",
+                         "Leave her to sleep in peace and continue on with your night.",
+                         "Play with her loose hair and slide apples into her hands.",
+                         "Wake her up and inevitably quarrel with her.",
+                         "Incorrect. She is at your disposal to use as an object for your entertainment. Indulge in your fantasies while you can.",
+                         "Correct! Her body is under your control. Use it as if it is a piece of art to be arranged.",
+                         "Incorrect. In waking her up, she will no longer be an object, and you will be unable to impose your desires onto her. You want her to be asleep for as long as possible.",
+                         "b"); //question 7
+    get_answer_from_user("You are infatuated with a woman you just met, but you have a family. What should you do?",
+                         "Follow her to a foreign place and abandon your wife and children for a more luxurious lifestyle.",
+                         "Dress up in a slave-woman’s outfit in public in order to entertain her.",
+                         "Control your desires and stay with your family.",
+                         "Incorrect. Indulging in luxury is dangerous for the development of courage and good character in men, and you must never let your decisions be influenced by a woman.",
+                         "Incorrect. You must never use your body as a form of entertainment for others, especially women. In doing so, you would be relinquishing control of your body to them.",
+                         "Correct! In doing this, you will be practicing control over your desires, which is the most masculine thing a man can do.",
+                         "c"); //question 8
     return 0;
 }
 
+//method to see if the user is ready to begin the quiz
 void is_user_ready() {
     string ready = "no";
     bool flag = true;
-    cout << "Welcome to my quiz! Let's see if you've got what it takes to be a man in ancient Rome. Are you ready? Enter yes to begin: "; //prompts user for input
+    cout << "Welcome to my quiz: How To Deal With Women In Ancient Rome: The Ultimate Guide for Men. Let's see if you've got what it takes to be the best male citizen in Ancient Rome. Are you ready? Enter yes to begin: "; //prompts user for input
     while (flag) {
         getline(cin, ready); //assigns input to string ready
         if (ready.length() == 0) { //no input
