@@ -79,7 +79,7 @@ int main() {
 void is_user_ready() {
     string ready = "no";
     bool flag = true;
-    cout << "Welcome to my quiz: How To Deal With Women In Ancient Rome: The Ultimate Guide for Men. Let's see if you've got what it takes to be the best male citizen in Ancient Rome. Are you ready? Enter yes to begin: "; //prompts user for input
+    cout << "Welcome to my quiz: How To Deal With Women In Ancient Rome: The Ultimate Guide for Men. Let's see if you've got what it takes to be the best male citizen in Ancient Rome. Are you ready? Enter yes to begin: "; //introduces quiz, prompts user for input
     while (flag) {
         getline(cin, ready); //assigns input to string ready
         if (ready.length() == 0) { //no input
@@ -93,33 +93,34 @@ void is_user_ready() {
     }
 }
 
-    void get_answer_from_user(string question, string answerA, string answerB, string answerC, string explanationA, string explanationB, string explanationC, string correctAnswer) {
-        cout << question << endl;
-        cout << "a: " + answerA << endl;
-        cout << "b: " + answerB << endl;
-        cout << "c: " + answerC << endl;
-        string answer = "";
-        bool flag = true;
-        cout << "Enter your answer: "; //prompts user for input
-        while (flag) {
-            getline(cin, answer); //assigns input to string answer
-            if (answer.length() == 0) { //no input
-                cout << "No input. Enter a, b, or c: ";
-            } else if (answer != "a" && answer != "b" && answer != "c") { //if input does not equal a, b, or c
-                cout << "Invalid input. Enter a, b, or c: ";
-                answer = "Retry";
-            } else if (answer == "a") {
-                cout << explanationA << endl;
-            } else if (answer == "b") {
-                cout << explanationB << endl;
-            } else {
-                cout << explanationC << endl;
-            }
-            if (correctAnswer == answer) {
-                flag = false;
-            }
-            else {
-                cout << "Try again: ";
-            }
+//method to display questions and have the user answer
+void get_answer_from_user(string question, string answerA, string answerB, string answerC, string explanationA, string explanationB, string explanationC, string correctAnswer) {
+    cout << question << endl; //prints questions and possible answers
+    cout << "a: " + answerA << endl;
+    cout << "b: " + answerB << endl;
+    cout << "c: " + answerC << endl;
+    string answer = "";
+    bool flag = true;
+    cout << "Enter your answer: "; //prompts user for input
+    while (flag) {
+        getline(cin, answer); //assigns input to string answer
+        if (answer.length() == 0) { //no input
+            cout << "No input. Enter a, b, or c: ";
+        } else if (answer != "a" && answer != "b" && answer != "c") { //if input does not equal a, b, or c
+            cout << "Invalid input. Enter a, b, or c: ";
+            answer = "Retry";
+        } else if (answer == "a") { //if they answer a
+            cout << explanationA << endl;
+        } else if (answer == "b") {
+            cout << explanationB << endl; //if they answer b
+        } else {
+            cout << explanationC << endl; //if they answer c
+        }
+        if (correctAnswer == answer) { //checks if the user's answer was the correct answer
+            flag = false;
+        }
+        else {
+            cout << "Try again: ";
         }
     }
+}
