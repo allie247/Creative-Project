@@ -42,7 +42,7 @@ int main() {
                          "Perform oral sex on her.",
                          "Correct! This will show her that you are able to assert control over your \nactions and regulate your own levels of masculinity.",
                          "Incorrect. You must show her that you are able to control your body through \nthe regulation of your consumption.",
-                         "Incorrect. Performing oral sex on a woman is the equivalent of being eaten by \nher vagina. If you engage in this act, you will be allowing yourself to be dominated by a woman and her genitals.",
+                         "Incorrect. Performing oral sex on a woman is the equivalent of being eaten by \nher vagina. If you engage in this act, you will be allowing yourself to be dominated by a \nwoman and her genitals.",
                          "a"); //question 4
     cout << "\nQuestion 5:\n" << endl;
     get_answer_from_user("Your wife doesn’t want to have sex with you. What should you do?",
@@ -75,11 +75,12 @@ int main() {
     get_answer_from_user("You are infatuated with a woman you just met, but you have a family. What should \nyou do?",
                          "Follow her to a foreign place and abandon your wife and children for a more \nluxurious lifestyle.",
                          "Dress up in a slave-woman’s outfit in public in order to entertain her.",
-                         "Control your desires and stay with your family.",
+                         "Stay with your family.",
                          "Incorrect. Indulging in luxury is dangerous for the development of courage and \ngood character in men, and you must never let your decisions be influenced by a woman.",
                          "Incorrect. You must never use your body as a form of entertainment for others, \nespecially women. In doing so, you would be relinquishing control of your body to them.",
                          "Correct! In doing this, you will be practicing control over your desires, which \nis the most masculine thing a man can do.",
                          "c"); //question 8
+    cout << "\nCongrats! Now you have what it takes to be a real man, to preserve the state of Rome.\n" << endl;
     return 0;
 }
 
@@ -87,7 +88,7 @@ int main() {
 void is_user_ready() {
     string ready = "no";
     bool flag = true;
-    cout << "Welcome to my quiz: How To Deal With Women In Ancient Rome: The Ultimate Guide for Men. Let's see if \nyou've got what it takes to be the best male citizen in Ancient Rome. Are you ready? Enter yes to begin: "; //introduces quiz, prompts user for input
+    cout << "Welcome to my quiz: How To Deal With Women In Ancient Rome: The Ultimate Guide for Men. This quiz will \ntest you to see if you've got what it takes to be the best male citizen in Ancient Rome. \nAre you ready? Enter yes to begin: "; //introduces quiz, prompts user for input
     while (flag) {
         getline(cin, ready); //assigns input to string ready
         if (ready.length() == 0) { //no input
