@@ -18,7 +18,7 @@ int main() {
                          "Incorrect. You just need to make sure she keeps reading your sweet nothings, and \neventually she will write back. Don’t force it.",
                          "a" ); //question 1
     cout << "\nQuestion 2:\n" << endl;
-    get_answer_from_user("You see a woman that you find attractive at a sporting event. What should you do",
+    get_answer_from_user("You see a woman that you find attractive at a sporting event. What should you do?",
                          "Sit down next to her and brush away the absence of specks on her bosom.",
                          "Allow the man behind her to press his knee into her soft back.",
                          "Applaud for a different horse than she is cheering for.",
